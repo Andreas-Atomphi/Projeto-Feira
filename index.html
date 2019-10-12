@@ -2,32 +2,64 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>HAS - Notìcias de eSport na hora!</title>
-		<link rel="icon" href="_img/Logo/logo_cor.png">
-		<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+		<title>HAS - Notícias de eSport na hora!</title>
+		<link rel="icon" href="_img/Icones/ico.png">
+		<link rel="stylesheet" type="text/css" href="_css/Style.css">
 		<script type="text/javascript" src="_js/funcoes.js"></script>
 	</head>
 	<body>
-		<div id="header"><a href="cadastro.html">Cadastre-se</a></div>
-		<div id="Articles">
-		<a href="csgo_n1.html"><img src="_img/csgo_1.jpg"></a>
-		<a href="fortnite_n1.html"><img src="_img/f_1.jpg"></a>
-		<a href="lol_n1.html"><img src="_img/lol_1.jpg"></a>
-		<input type="button" name="btnMais" value="Mais notícias" onclick="exibirNoticias()">
+		<div id="header">
+			<a href="index.html"><img src="_img/Logo/logo_cor.png" id="logo"></a>
+			<img src="_img/Banner-rodpé/Banner001.png" id="header_img">
+			<div id="signin"><a href="cadastro.html">Cadastre-se</a></div>
 		</div>
+
+		<div id="news">
+		<a href="csgo_n1.html"><img src="_img/csgo_1.jpg" id="img_grande"></a>
+		<a href="fortnite_n1.html"><img src="_img/f_2.jpg" id="img_peq"></a>
+		<a href="lol_n1.html"><img src="_img/lol_1.jpg" id="img_peq"></a>
+		<a href="notícias.html">Mais notícias</a>
+		</div>
+
 		<div id="content">
-			<!--Aprentação do site
-			<h1>Quem somos?</h1>
-			<p>Texto_Apresentação</p>!-->
-			
+			<!--botão KDA-->
+			<button type="button" class="btnKDA" data-toggle="modal" data-target="#KDA_Calc">
+			Calcular KDA
+			</button>	
+			<!--KDA_Modal-->
+			<div class="Fade_modal" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  				<div class="modal_dialog_centralizado" role="document">
+    				<div class="modal-content">
+     					<div class="modal-header">
+        					<h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+        						<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+       						 	  <span aria-hidden="true">&times;</span>
+        						</button>
+     					</div>
+      					<div class="modal-body">
+      						</div>
+      					<div class="modal-footer">
+       						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+       						<button type="button" class="btn btn-primary">Salvar mudanças</button>
+     					</div>
+    				</div>
+  				</div>
+			</div>
 			<!--Explicando o que é eSports-->
 			<h1>O que é eSports?</h1>
+
 			<p>O eSports, ou esporte eletrônico, veio para ficar. A modalidade de competição profissional com video games não é muito nova, mas cresce a cada ano, sempre na cola de jogos de sucesso, como League of Legends, DOTA 2, Counter Strike, Starcraft e outros.</p>
+
 			<p>As origens do esporte eletrônico estão, provavelmente, na Coréia do Sul e em alguns pontos da Ásia e Europa. Os jogos do gênero de estratégia em tempo real cresceram nesses locais, além de levarem ainda popularidade aos jogadores profissionais que surgiram na onda. Na Coréia do Sul, por exemplo, o eSport é uma modalidade competitividade reconhecida oficialmente desde o ano 2000.</p>
+
 			<p>Hoje, além da Ásia, outros grandes territórios do eSport são America do Norte e o restante da Europa que ainda não tinha sido "febre" nos primeiros momentos, há até mesmo jogadores que conseguem visto de viagem para modalidades esportivas, o que mostra a evolução das competições. Os maiores torneios possuem transmissão ao vivo via Internet, etapas presrnciais com milhares de pessoas na plateia e até mesmo narradores oficiais.</p>
+
 			<h1>Os Jogadores Profissionais</h1>
+
 			<p>Como todo esporte tradicional, os esportes eletrônicos também possuem times e jogadores oficiais, é normal que seja uma equipe de eSport seja patrocinada por uma grande marca relacionada com games, por exemplo. Além de existirem jogadores que possuem suas próprias marcas, fama e, claro, uma legião de fãs.</p>
 		</div>
-		<div id="footer"></div>
+		<div id="footer">
+			<img src="_img/Banner-rodpé/Rodape001.png">
+		</div>
 	</body>
 </html>

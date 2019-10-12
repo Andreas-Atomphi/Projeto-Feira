@@ -5,6 +5,45 @@
 		<title></title>
 	</head>
 	<body>
-		<p>Página de cadastro</p>
+		<div id="header">
+			<a href="index.html"><img src="_img/Logo/logo_cor.png" id="logo"></a>
+			<img src="_img/Banner-rodpé/Banner001.png" id="header_img">
+			<div id="signin"><a href="cadastro.html">Cadastre-se</a></div>
+		</div>
+		<div id="form">
+		<h1>Cadastre-se</h1>
+			<form>
+				Digite seu nome completo:
+				<input type="text" name="receberNome"
+				maxlength="32" e size="46">
+				<br>
+				<br>
+				Data de nascimento:
+				<input type="date" name="receberData">
+				<br>
+				Digite seu email:
+				<input type="email" name="receberEmail">
+				<br>
+				<br>
+				Qual é o gênero de jogo que vc mais gosta:
+				<input type="text" name="receberGenero"
+				maxlength="32" e size="46">
+				<br>
+				<br>		
+				Fale para nós o que vc achou do nosso site:
+				<br>
+				<textarea cols="48" rows="8">
+				</textarea>
+				<br>
+				<br>
+				<input type="submit" value="Clique para cadastrar">
+<!--A equipe de JS deverá validar o cadastro assim será necessario a criação de uma mascara de validação para os respectivos campos do cadastro presentes 
+				nessa página-->
+<!-- Equipe de Css criar um botão para voltar para a página principal-->				
+			</form>
+		</div>
+		<div id="footer">
+			<img src="_img/Banner-rodpé/Rodape001.png">
+		</div>
 	</body>
 </html>
