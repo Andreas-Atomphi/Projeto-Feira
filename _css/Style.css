@@ -1,0 +1,141 @@
+body{
+    background-color: #212121;
+    margin: 0px;
+}
+h1 {
+        font-family: Agency FB;
+        font-size: 40px;
+    }
+  a{
+      color:#212121;
+  }
+    p {
+        font-family: Bookman Old Style;
+        font-size: 20px;
+    }
+    .img_noticias{
+        width: 500px;
+        height: 350px;
+    }
+
+    div {
+        margin: 0%;
+        margin: auto;
+        width: 70%;
+        height: 100%;
+    } 
+    div#header {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: -10px;
+    } 
+    div#signin{
+        text-align: right;
+        width:100%;
+        height: auto;
+        padding: 0px;
+        background-color: #212121;
+        position: relative;
+        top:0px;  
+    }
+    .cad{
+        width: 85%;
+        font-size: 25px;
+        font-family: Agency FB;
+        margin:0;
+        color:#00ffbb;
+    }
+    .header_img{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .logo{
+        width: 10%;
+		left:5%;
+        position: absolute;
+        height: auto;
+        margin-top: 48px;
+    }
+    div#news{
+        background-color: #eeeeee;
+        padding: 15px;
+    }
+    .img_grande{
+        width:50vw;
+    }
+    .img_peq1{
+        width:50vw;
+    }
+    .img_peq2{
+        width:50vw;
+    }
+    .mais_n{
+        position: absolute;
+        font-size: 20px;
+        color: #212121;
+        font-family: Agency FB;
+    }
+    div#content {
+        margin: auto;
+        padding:15px;
+        width: 70%;
+        height: 100%;
+        background-color: #eeeeee;
+    } 
+    div#footer {
+        margin: auto;
+        width: 100%;
+        height: 0px;
+    } 
+    .foot{
+    width:100%;
+   
+    }
+    div#form {
+        margin: auto;
+        padding:15px;
+        width: 70%;
+        height: 100%;
+        background-color: #eeeeee;
+    }
+    .formulario{
+        padding-bottom:35px;
+        font-family: Bookman Old Style;
+        font-size: 20px;
+    }
+    .seta{
+        margin-left: 900px;
+        padding:0;
+        width:10%;
+        height: 40px;
+		position:relative;
+    }
+    div#artigo{
+        
+        margin: auto;
+        padding:15px;
+        width: 70%;
+        height: 100%;
+        background-color: #eeeeee;
+        font-family: Bookman Old Style;
+        font-size: 20px;
+    }
+    .artigos{
+        text-align: center;
+    }
+    .artigo_img{
+		display: block;
+		float:center;
+        position: relative;
+        width:60vw;
+        height: 100%;
+        margin: auto;
+    }
+    .fotoNoticia{
+        position: relative;
+        left: 12%;
+        width: 500px;
+        height: 350px;
+    }

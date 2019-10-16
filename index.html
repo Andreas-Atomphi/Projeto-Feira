@@ -4,47 +4,32 @@
 		<meta charset="utf-8">
 		<title>HAS - Notícias de eSport na hora!</title>
 		<link rel="icon" href="_img/Icones/ico.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 		<link rel="stylesheet" type="text/css" href="_css/Style.css">
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 		<script type="text/javascript" src="_js/funcoes.js"></script>
 	</head>
 	<body>
 		<div id="header">
-			<a href="index.html"><img src="_img/Logo/logo_cor.png" id="logo"></a>
-			<img src="_img/Banner-rodpé/Banner001.png" id="header_img">
-			<div id="signin"><a href="cadastro.html">Cadastre-se</a></div>
+			<a href="index.html"><img src="_img/Logo/logo_cor.png" class="logo"></a>
+			<img src="_img/Banner-rodpé/Banner001.png" class="header_img">
+			<div id="signin"><a href="cadastro.html"><p class="cad">Cadastre-se</p></a></div>
 		</div>
-
 		<div id="news">
-		<a href="csgo_n1.html"><img src="_img/csgo_1.jpg" id="img_grande"></a>
-		<a href="fortnite_n1.html"><img src="_img/f_2.jpg" id="img_peq"></a>
-		<a href="lol_n1.html"><img src="_img/lol_1.jpg" id="img_peq"></a>
-		<a href="notícias.html">Mais notícias</a>
-		</div>
+				<a href="csgo_n1.html"><img src="_img/csgo_1.jpg" class="img_grande"></a><br>
+				<a href="fortnite_n1.html"><img src="_img/f_2.jpg" class="img_peq1"></a><br>
+				<a href="lol_n1.html"><img src="_img/lol_1.jpg" class="img_peq2"></a>
+				<br>
+				<a class="mais_n" href="notícias.html"><strong>Todas as notícias</strong></a>
+				</div>
 
 		<div id="content">
-			<!--botão KDA-->
-			<button type="button" class="btnKDA" data-toggle="modal" data-target="#KDA_Calc">
-			Calcular KDA
-			</button>	
-			<!--KDA_Modal-->
-			<div class="Fade_modal" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-  				<div class="modal_dialog_centralizado" role="document">
-    				<div class="modal-content">
-     					<div class="modal-header">
-        					<h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
-        						<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-       						 	  <span aria-hidden="true">&times;</span>
-        						</button>
-     					</div>
-      					<div class="modal-body">
-      						</div>
-      					<div class="modal-footer">
-       						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-       						<button type="button" class="btn btn-primary">Salvar mudanças</button>
-     					</div>
-    				</div>
-  				</div>
-			</div>
+
 			<!--Explicando o que é eSports-->
 			<h1>O que é eSports?</h1>
 
@@ -57,9 +42,57 @@
 			<h1>Os Jogadores Profissionais</h1>
 
 			<p>Como todo esporte tradicional, os esportes eletrônicos também possuem times e jogadores oficiais, é normal que seja uma equipe de eSport seja patrocinada por uma grande marca relacionada com games, por exemplo. Além de existirem jogadores que possuem suas próprias marcas, fama e, claro, uma legião de fãs.</p>
-		</div>
-		<div id="footer">
-			<img src="_img/Banner-rodpé/Rodape001.png">
-		</div>
+		
+	
+	
+<!-- Botão para acionar modal -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#ExemploModalCentralizado">
+  Calcule seu KDA!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">CALCULO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+			<form>
+				Insira a quantidade de kills(vezes que você matou alguém):
+					<br>
+					<input type="number" name="receberKill">
+					<br>
+					<br>
+				Insira a quantidade de Deaths (vezes que você morreu):
+					<br>
+					<input type="number" name="receberDeaths">
+					<br>
+					<br>
+				Insira a quantidade de Assists(assistencias em kills de outras pessoas):
+					<br>
+					<input type="number" name="receberAssists">
+					<br>
+					<br>
+					<input type="button" class="btn btn-info" value="Calcular" onclick="receberValores(receberKill.value,receberDeaths.value,receberAssists.value)">
+					<input id="txtResultado" type="number" name="resultadoKDA" disabled="disabled">
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-info">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+	
+			<div id="footer">
+				<img class="foot" src="_img/Banner-rodpé/Rodape001.png">
+			</div>
+
 	</body>
 </html>
